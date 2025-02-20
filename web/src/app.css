@@ -1,1 +1,9 @@
 @import "tailwindcss";
+@font-face {
+    font-family: "League Spartan Variable";
+    font-weight: 200 900;
+    src: url("./fonts/LeagueSpartanVariable.woff2") format("woff2-variations");
+}
+@theme {
+    --font-primary: "League Spartan Variable", "sans-serif";
+}
