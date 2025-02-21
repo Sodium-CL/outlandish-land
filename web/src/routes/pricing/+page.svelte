@@ -1,9 +1,9 @@
 <svelte:head>
     <title>Pricing</title>
 </svelte:head>
-<div class="w-full h-9/10 flex flex-col items-center justify-center">
-    <p class="text-6xl md:text-7xl px-16">
+<div class="flex flex-col items-center justify-center">
+    <span class="text-2xl md:text-6xl mx-8">
         Our services is free for small communities. Drop us an email -
         support@outlandish.land to connect with us.
-    </p>
+    </span>
 </div>
