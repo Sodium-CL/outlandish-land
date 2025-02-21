@@ -55,12 +55,29 @@
             </ul>
         </li>
     </ul>
-    <div class="h-8/10 w-full flex flex-column">
+    <div class="h-7/10 w-full flex flex-column">
         {@render children()}
     </div>
-    <ul class="h-1/10 px-2 flex flex-row items-center justify-center">
-        <li class="p-2"><a href="/">Home</a></li>
-        <li class="p-2"><a href="/resources">Resources</a></li>
-        <li class="p-2"><a href="/pricing">Pricing</a></li>
+    <ul class="h-1/10 px-2 flex flex-row items-center justify-center text-xl">
+        <li
+            class="p-2 hover:bg-sky-200 hover:underline hover:underline-offset-4"
+        >
+            <a href="/">Home</a>
+        </li>
+        <li
+            class="p-2 hover:bg-sky-200 hover:underline hover:underline-offset-4"
+        >
+            <a href="/resources">Resources</a>
+        </li>
+        <li
+            class="p-2 hover:bg-sky-200 hover:underline hover:underline-offset-4"
+        >
+            <a href="/pricing">Pricing</a>
+        </li>
     </ul>
+    <div
+        class="h-1/10 px-2 flex flex-row items-center justify-center bg-blue-200"
+    >
+        <p>All rights reserved. 2025</p>
+    </div>
 </div>
