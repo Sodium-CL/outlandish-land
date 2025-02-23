@@ -1,83 +1,110 @@
 <script>
     let { children } = $props();
     import "../app.css";
+    import Icon from "../icons/svelete-files/icon.svelte";
 </script>
 
 <div class="h-screen w-screen font-primary bg-orange-50">
-    <ul class="h-1/10 flex flex-row items-center justify-center list-none">
-        <li class="px-2 flex flex-row items-center">
-            <svg
-                width="2em"
-                height="2em"
-                version="1.1"
-                viewBox="0 0 1200 1200"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="m131.26 829.82c0-128.63 104.25-232.87 232.87-232.87h283.45c128.63 0 232.87 104.25 232.87 232.87 0 128.58-104.25 232.82-232.87 232.82h-283.45c-128.63 0-232.87-104.25-232.87-232.82zm232.87-168.05c-92.859 0-168.1 75.234-168.1 168.05s75.234 168.05 168.1 168.05h283.45c92.812 0 168.05-75.234 168.05-168.05s-75.234-168.05-168.05-168.05z"
-                    fill-rule="evenodd"
-                />
-                <path
-                    d="m228.42 829.82c0-74.953 60.75-135.66 135.71-135.66h283.45c74.953 0 135.66 60.703 135.66 135.66 0 74.906-60.703 135.66-135.66 135.66h-283.45c-74.953 0-135.71-60.75-135.71-135.66zm135.71-70.875c-39.141 0-70.875 31.734-70.875 70.875s31.734 70.875 70.875 70.875h283.45c39.141 0 70.875-31.734 70.875-70.875s-31.734-70.875-70.875-70.875z"
-                    fill-rule="evenodd"
-                />
-                <path
-                    d="m835.92 661.78h-164.02v-64.828h164.02c128.58 0 232.82 104.25 232.82 232.87 0 128.58-104.25 232.82-232.82 232.82h-164.02v-64.781h164.02c92.812 0 168.05-75.234 168.05-168.05s-75.234-168.05-168.05-168.05z"
-                    fill-rule="evenodd"
-                />
-                <path
-                    d="m835.87 758.95h-2.0156v-64.781h2.0156c74.953 0 135.71 60.703 135.71 135.66 0 74.906-60.75 135.66-135.71 135.66h-2.0156v-64.781h2.0156c39.141 0 70.875-31.734 70.875-70.875 0-39.141-31.734-70.875-70.875-70.875z"
-                    fill-rule="evenodd"
-                />
-                <path
-                    d="m692.11 196.03h-184.22v-64.781h184.22c119.67 0 216.66 96.984 216.66 216.66 0 119.67-96.984 216.66-216.66 216.66h-184.22v-64.781h184.22c83.906 0 151.87-68.016 151.87-151.87 0-83.859-67.969-151.87-151.87-151.87z"
-                    fill-rule="evenodd"
-                />
-                <path
-                    d="m692.11 291.24h-22.266v-64.828h22.266c66 0 119.48 53.484 119.48 119.48 0 65.953-53.484 119.44-119.48 119.44h-22.266v-64.781h22.266c30.234 0 54.703-24.469 54.703-54.656s-24.469-54.656-54.703-54.656z"
-                    fill-rule="evenodd"
-                />
-                <path
-                    d="m289.18 347.9c0-119.67 97.031-216.66 216.66-216.66 119.67 0 216.66 96.984 216.66 216.66 0 119.67-96.984 216.66-216.66 216.66-119.62 0-216.66-96.984-216.66-216.66zm216.66-151.87c-83.859 0-151.82 68.016-151.82 151.87 0 83.859 67.969 151.87 151.82 151.87 83.906 0 151.87-68.016 151.87-151.87 0-83.859-67.969-151.87-151.87-151.87z"
-                    fill-rule="evenodd"
-                />
-                <path
-                    d="m386.39 347.9c0-66 53.484-119.48 119.44-119.48 66 0 119.48 53.484 119.48 119.48s-53.484 119.48-119.48 119.48c-65.953 0-119.44-53.484-119.44-119.48zm119.44-54.656c-30.188 0-54.656 24.469-54.656 54.656s24.469 54.656 54.656 54.656c30.234 0 54.703-24.469 54.703-54.656s-24.469-54.656-54.703-54.656z"
-                    fill-rule="evenodd"
-                />
-            </svg>
+    <nav class="h-1/10 bg-red-500 flex flex-col justify-center">
+        <div class="w-full mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div
+                    class="absolute inset-y-0 left-0 flex items-center sm:hidden"
+                >
+                    <!-- Mobile menu button-->
+                    <button
+                        type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-red-200 hover:bg-red-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                    >
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                Icon when menu is closed.
 
-            <ul>
-                <ul class="px-4 py-2 font-semibold">
-                    <li class="text-2xl">outlandish</li>
-                    <li class="tracking-widest uppercase">land</li>
-                </ul>
-            </ul>
-        </li>
-    </ul>
-    <div class="h-7/10 w-full flex flex-column">
+                Menu open: "hidden", Menu closed: "block"
+              -->
+                        <svg
+                            class="block size-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                            />
+                        </svg>
+                        <!--
+                Icon when menu is open.
+
+                Menu open: "block", Menu closed: "hidden"
+              -->
+                        <svg
+                            class="hidden size-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18 18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div
+                    class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+                >
+                    <div class="flex shrink-0 items-center">
+                        <Icon
+                            width="2em"
+                            height="2em"
+                            fill="oklch(0.98 0.016 73.684)"
+                        />
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a
+                                href="/"
+                                class="rounded-md bg-red-900 px-3 py-2 text-sm font-medium text-white"
+                                aria-current="page">Home</a
+                            >
+                            <a
+                                href="/events"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-red-50 hover:bg-red-800 hover:text-white"
+                                >Events</a
+                            >
+                            <a
+                                href="/tickets"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-red-50 hover:bg-red-800 hover:text-white"
+                                >Tickets</a
+                            >
+                            <a
+                                href="/support"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-red-50 hover:bg-red-800 hover:text-white"
+                                >Support</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+                ></div>
+            </div>
+        </div>
+    </nav>
+    <div class="h-9/10 w-full flex flex-column">
         {@render children()}
-    </div>
-    <ul class="h-1/10 px-2 flex flex-row items-center justify-center text-xl">
-        <li
-            class="p-2 hover:bg-sky-200 hover:underline hover:underline-offset-4"
-        >
-            <a href="/">Home</a>
-        </li>
-        <li
-            class="p-2 hover:bg-sky-200 hover:underline hover:underline-offset-4"
-        >
-            <a href="/resources">Resources</a>
-        </li>
-        <li
-            class="p-2 hover:bg-sky-200 hover:underline hover:underline-offset-4"
-        >
-            <a href="/pricing">Pricing</a>
-        </li>
-    </ul>
-    <div
-        class="h-1/10 px-2 flex flex-row items-center justify-center bg-blue-200"
-    >
-        <p>All rights reserved. 2025</p>
     </div>
 </div>
