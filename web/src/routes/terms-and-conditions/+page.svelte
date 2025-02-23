@@ -9,7 +9,7 @@
 <div class="w-full flex flex-col items-center justify-center mt-8 mx-12 mb-8">
     <h2 class="text-2xl font-semibold text-red-600">Terms &amp; Conditions</h2>
     <p class="text-sm mx-8"></p>
-    <ul>
+    <ul class="list-decimal">
         <li>
             This document is an electronic record in terms of Information
             Technology Act, 2000 and rules there under as applicable and the
@@ -27,12 +27,13 @@
             mobile site and mobile application (hereinafter referred to as
             'Platform').
         </li>
-    </ul>
-
-    The Platform is owned by Outlandish Land, a company incorporated under the
+<li>  The Platform is owned by Outlandish Land, a company incorporated under the
     Companies Act, 1956 with its registered office at A22, Shreedham Splendor,
     Anand Nagar Link Road, Mumbai - 400102 (hereinafter referred to as ?Platform
-    Owner?, 'we', 'us', 'our').. Your use of the Platform and services and tools
+    Owner?, 'we', 'us', 'our').. </li>
+    </ul>
+
+  Your use of the Platform and services and tools
     are governed by the following terms and conditions (?Terms of Use?) as
     applicable to the Platform including the applicable policies which are
     incorporated herein by way of reference. If You transact on the Platform,
