@@ -6,7 +6,7 @@
     <title>Privacy Policy</title>
 </svelte:head>
 <div class="w-full flex flex-col items-center justify-center mt-8 mx-12 mb-8">
-    <h2 class="text-2xl font-semibold text-red-600">Privacy Policy</h2>
+    <h2 class="text-2xl font-semibold text-red-600 m-4">Privacy Policy</h2>
     <p class="text-sm mx-8">
         <span class="text-lg font-bold">Introduction</span><br /><br />
         This Privacy Policy describes how Outlandish Land and its affiliates (collectively

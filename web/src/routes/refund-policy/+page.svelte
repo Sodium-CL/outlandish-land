@@ -6,7 +6,7 @@
     <title>Refund and Cancellation policy</title>
 </svelte:head>
 <div class="w-full flex flex-col items-center justify-center mt-8 mx-12 mb-8">
-    <h2 class="text-2xl font-semibold text-red-600">
+    <h2 class="text-2xl font-semibold text-red-600 m-4">
         Refund and Cancellation policy
     </h2>
     <p class="text-sm mx-8">
