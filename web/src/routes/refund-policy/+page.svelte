@@ -24,8 +24,7 @@
             </li>
             <li>
                 In case of any refunds approved by Outlandish Land, it will take
-                15 days for the amount to be credited to the original mode of
-                payment.
+                15 days for the refund to be processed to you.
             </li>
         </ul>
     </div>
