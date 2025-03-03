@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>Events</title>
+    <title>Events T</title>
 </svelte:head>
 <div class="w-full flex flex-col items-center justify-center">
     <EroticEdge />
