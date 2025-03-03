@@ -1,11 +1,22 @@
 <script>
-    import EroticEdge from "./eroticedge.svelte";
+    import Event from "./Event.svelte";
     let { data } = $props();
 </script>
 
 <svelte:head>
     <title>Events</title>
 </svelte:head>
-<div class="w-full flex flex-col items-center justify-center">
-    <EroticEdge />
-</div>
+
+{#each data.body.events as event}
+    <div class="w-full flex flex-col items-center justify-center">
+        <Event
+            name={event.name}
+            tagline={event.tagline}
+            startDate={event.startDate}
+            endDate={event.endDate}
+            brief={event.brief}
+            imageURL={event.imageUrl}
+            registrationLink={event.registrationLink}
+        />
+    </div>
+{/each}
