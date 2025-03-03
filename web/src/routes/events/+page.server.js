@@ -1,8 +1,8 @@
 import { building } from '$app/environment';
-import {client} from "$lib/server/sanity.js";
-
+import {fetchEventDetails} from "$lib/server/sanity.js";
+var events = null
 if (!building) {
-    const events = client.fetch('*[_type == "event"]')
+    events = fetchEventDetails()
 }
 
 export async function load() {
