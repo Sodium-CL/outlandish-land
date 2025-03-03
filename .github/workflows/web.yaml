@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main
-      - "releases/**"
-      - "feature/**"
-      - "phase*/**"
+      - "psb-*"
     paths:
       - "web/**"
 
@@ -26,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
 
       - name: Install NPM dependencies
         run: npm install
@@ -53,7 +51,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -69,6 +67,6 @@ jobs:
           --api-location server \
           --env production \
           --api-language "node" \
-          --api-version "18" \
+          --api-version "22" \
           --deployment-token ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }} \
           -name outlandish-web
