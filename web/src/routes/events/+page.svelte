@@ -1,5 +1,6 @@
 <script>
     import EroticEdge from "./eroticedge.svelte";
+    let { data } = $props();
 </script>
 
 <svelte:head>
