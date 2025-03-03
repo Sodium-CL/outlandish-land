@@ -4,7 +4,7 @@ var events = [];
 var query =
   '*[_type == "event"]{name,tagline,"brief":brief[].children[].text,"imageUrl": image.asset->url,startDate,endDate,registrationLink}';
 if (!building) {
-  events = await fetchEventDetails(query);
+  events = fetchEventDetails(query);
 }
 export async function load() {
   return {
