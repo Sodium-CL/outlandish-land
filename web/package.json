@@ -1,7 +1,7 @@
 {
 	"name": "outlandish-land",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -17,13 +17,9 @@
 		"svelte-adapter-azure-swa": "^0.20.1",
 		"vite": "^6.0.0"
 	},
-	"engines": {
-		"node": ">=18.13 <19"
-	},
 	"dependencies": {
-		"@sanity/image-url": "^1.1.0",
+		"@sanity/client": "^6.28.2",
 		"@tailwindcss/vite": "^4.0.6",
-		"next-sanity": "^9.8.59",
 		"tailwindcss": "^4.0.6"
 	}
 }
