@@ -1,10 +1,10 @@
 
 import {createClient} from '@sanity/client'
-import { PROJECT_ID,DATASET,API_VERSION,SANITY_READ_TOKEN } from '$env/dynamic/private';
+import {env} from '$env/dynamic/private';
 export const client = createClient({
-    projectId:PROJECT_ID,
-    dataset: DATASET,
+    projectId: env.PROJECT_ID,
+    dataset: env.DATASET,
     useCdn: true,
-    apiVersion: API_VERSION,
-    token: SANITY_READ_TOKEN
+    apiVersion: env.API_VERSION,
+    token: env.SANITY_READ_TOKEN
 })
