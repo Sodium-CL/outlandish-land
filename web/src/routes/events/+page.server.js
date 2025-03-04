@@ -1,12 +1,13 @@
 import { building } from "$app/environment";
-import { fetchEventDetails } from "$lib/server/sanity.js";
-var events = [];
-var query =
+import { data } from "$lib/server/sanityData.js";
+const query =
   '*[_type == "event"]{name,tagline,"brief":brief[].children[].text,"imageUrl": image.asset->url,startDate,endDate,registrationLink}';
-if (!building) {
-  events = fetchEventDetails(query);
-}
+
 export async function load() {
+  var events = [];
+  if (!building) {
+    events = await data(query);
+  }
   return {
     body: {
       events,
