@@ -3,15 +3,11 @@ import { data } from "$lib/server/sanityData.js";
 const query = `
   *[_type == "event"]{
   name,
-    place,
-    "slug": slug.current,
-    tagline,
-    brief,
-    "imageUrl": image.asset->url,
-    startDate,
-    endDate,
-    registrationLink,
-    "priceList":Price[]
+  place,
+  "slug": slug.current,
+  registrationLink,
+  eventpriceTagline,
+  "priceList":Price[]
   }
   `;
 
@@ -25,5 +21,6 @@ export async function load({ params }) {
     body: {
       events,
     },
+    slug: params.slug,
   };
 }
