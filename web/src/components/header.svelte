@@ -80,11 +80,6 @@
                             class="rounded-md px-3 py-2 text-sm font-medium text-red-50 hover:bg-red-800 hover:text-white"
                             >Events</a
                         >
-                        <a
-                            href="/tickets"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-red-50 hover:bg-red-800 hover:text-white"
-                            >Tickets</a
-                        >
                     </div>
                 </div>
             </div>
